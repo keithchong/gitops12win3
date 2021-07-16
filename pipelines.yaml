@@ -24,6 +24,12 @@ environments:
       bindings:
       - github-push-binding
       template: app-ci-template
+- name: production
+  pipelines:
+    integration:
+      bindings:
+      - github-push-binding
+      template: app-ci-template
 - name: stage
 gitops_url: https://github.com/keithchong/gitops12win3.git
 version: 1
